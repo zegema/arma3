@@ -1,0 +1,10 @@
+	//Effects
+	DOK_CREATE_FCT(effects,ashes)
+	DOK_CREATE_FCT(effects,blackAndWhite)
+	DOK_CREATE_FCT(effects,flash)
+	DOK_CREATE_FCT(effects,heavyColor)
+	DOK_CREATE_FCT(effects,highContrast)
+	DOK_CREATE_FCT(effects,infraRed)
+	DOK_CREATE_FCT(effects,noEffect)
+	DOK_CREATE_FCT(effects,sepia)
+	DOK_CREATE_FCT(effects,snow)
