@@ -1,4 +1,4 @@
-	//Nuke
+	//Hack
 	class DOK_KEYB_TYPING {
 		name = "DOK_KEYB_TYPING";
 		sound[] = {"\eldoktor\scripts\hack\sounds\Keyboard_Typing.ogg",12.589254,1};

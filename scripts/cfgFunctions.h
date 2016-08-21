@@ -7,6 +7,7 @@ class CfgFunctions {
 	class DOK_SCRIPTS_FCT {
 		tag = "DOK";
         class nocategories {
+			#include "carJacking\cfgFunctions.hpp"
 			#include "common\cfgFunctions.hpp"
 			#include "effects\cfgFunctions.hpp"
 			#include "hack\cfgFunctions.hpp"

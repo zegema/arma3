@@ -1,4 +1,4 @@
-	//Hostage
+	//Hack
 	DOK_CREATE_FCT(hack,hackInit)
 	
 	DOK_CREATE_FCT(hack,hackDone)

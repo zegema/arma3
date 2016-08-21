@@ -10,7 +10,7 @@ _strCode = str _userCode;
 DOK_HACK_NOSOUND = _ambiant;
 [_object,
 	_title,
-	"\A3\ui_f\data\igui\cfg\simpleTasks\types\destroy_ca.paa",    
+	"\A3\ui_f\data\igui\cfg\simpleTasks\types\interact_ca.paa",    
 	"\A3\ui_f\data\igui\cfg\simpleTasks\types\kill_ca.paa",
 	"!(_target getVariable ['DOK_HACKED',false])",
 	"true",
