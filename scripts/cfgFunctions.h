@@ -9,6 +9,7 @@ class CfgFunctions {
         class nocategories {
 			#include "common\cfgFunctions.hpp"
 			#include "effects\cfgFunctions.hpp"
+			#include "hack\cfgFunctions.hpp"
 			#include "hostage\cfgFunctions.hpp"
 			#include "mp\cfgFunctions.hpp"
 			#include "nuke\cfgFunctions.hpp"
