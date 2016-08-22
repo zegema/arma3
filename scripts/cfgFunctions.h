@@ -12,6 +12,7 @@ class CfgFunctions {
 			#include "effects\cfgFunctions.hpp"
 			#include "hack\cfgFunctions.hpp"
 			#include "hostage\cfgFunctions.hpp"
+			#include "ia\cfgFunctions.hpp"
 			#include "mp\cfgFunctions.hpp"
 			#include "nuke\cfgFunctions.hpp"
 		};
