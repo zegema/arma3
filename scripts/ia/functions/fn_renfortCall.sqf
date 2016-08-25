@@ -3,10 +3,12 @@
 	Exemple :
 */
 if(!isServer)exitWith{};
-if(leader _this != _this)exitWith{};
-
 params ["_unitCalling"];
+if(leader _unitCalling != _unitCalling)exitWith{};
+if((group _unitCalling) getVariable["DOK_RENFORT_CALL",false])exitWith{};
+(group _unitCalling) setVariable["DOK_RENFORT_CALL",true]; //Mettre le scheduler en place
 
+private ["_renfort"];
 _renfort = objNull;
 while{count DOK_RENFORT_LIST > 0} do {
 	_renfort = DOK_RENFORT_LIST call BIS_fnc_selectRAndom;
@@ -22,7 +24,7 @@ if(!isNull _renfort) then {
 
 	if(_renfort getVariable ["DOK_RENFORT_PARA",false]) then {
 		private ["_posPara"];
-		_posPara = _unitCalling getDir [500,(getDir _unitCalling) +180];
+		_posPara = _unitCalling getDir [500,(getDir _unitCalling)+180];
 		_posPara set [2,300];
 		{
 			_x addBackpack "B_parachute";
