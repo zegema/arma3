@@ -1,9 +1,9 @@
-params ["_posx","_posy"];
+params ["_posx","_posy","_posz"];
 private ["_next", "_dis", "_height", "_con", "_cnt", "_agl", "_coef", "_velx", "_vely", "_velz"];
 
 _next = 0
 _dis = 300
-_height = 300
+_height = _posz + 300;
 _con = 3
 #start
 _cnt = 0

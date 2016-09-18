@@ -1,6 +1,8 @@
 /*
 	Authors(s) : 
 */
+if(!hasInterface)exitWith{};
+
 params [["_time",1.5]];
 
 "colorCorrections" ppEffectEnable true; 

@@ -3,7 +3,7 @@
 	Exemple : [this,{hint format ["%1 hacked by %2",_this select 0,_this select 1]},true,"Test",30] call DOK_fnc_hackInit
 */
 if(isDedicated)exitWith{};
-params ["_object",["_userCode",{}],["_ambiant",false],["_title","Hack"],["_timeToHack",60]];
+params ["_object",["_userCode",{}],["_ambiant",false],["_title",localize "DOK_HACK_ACTION"],["_timeToHack",60]];
 private ["_strCode","_objects"];
 
 _strCode = str _userCode;
@@ -17,7 +17,7 @@ if(typeOf _object == "Logic") then {
 {
 	[_x,
 		_title,
-		"\A3\ui_f\data\igui\cfg\simpleTasks\types\interact_ca.paa",    
+		"\A3\ui_f\data\igui\cfg\simpleTasks\types\interact_ca.paa",
 		"\A3\ui_f\data\igui\cfg\simpleTasks\types\kill_ca.paa",
 		"!(_target getVariable ['DOK_HACKED',false])",
 		"true",

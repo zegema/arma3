@@ -1,6 +1,8 @@
 /*
 	Authors(s) : http://www.assaultmissionstudio.de/index.php?topic=338.0
 */
+if(!hasInterface)exitWith{};
+
 params [["_time",0]];
 
 "ColorCorrections" ppEffectAdjust [1, 1, 0, [0, 0, 0, 0], [1, 0.6, 0.4, 0.6], [0.2, 0.59, 0.11, 0]];

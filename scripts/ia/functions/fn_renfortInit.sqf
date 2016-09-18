@@ -8,7 +8,10 @@ params ["_unit",["_disableUnits",false],["_type",""]];
 if(isNil "DOK_RENFORT_LIST") then {
 	DOK_RENFORT_LIST = [];
 	{
-		_x addEventHandler ["Reloaded",{(_this select 0) call DOK_fnc_renfortCall}];
+		_x spawn {
+			waitUntil{sleep 1;currentMagazine _this != ""};
+			_this addEventHandler ["Reloaded",{(_this select 0) spawn DOK_fnc_renfortCall}];
+		};
 	}forEach (allUnits - (switchableUnits + playableUnits));
 };
 
@@ -25,4 +28,4 @@ if(typeOf _unit == "Logic") then {
 		(group _x) setVariable [_type,true];
 	};
 	DOK_RENFORT_LIST = DOK_RENFORT_LIST + [group _x];
-}forEach _untis;
+}forEach _units;

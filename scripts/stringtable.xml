@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project name="DOK ezScripts">
+	<Package name="DOK">
+		<Key ID="DOK_HOSTAGE_FREE">
+			<Original>[HOSTAGE] Free</Original>
+			<French>[OTAGE] Libérer</French>
+		</Key>
+		<Key ID="DOK_HOSTAGE_RELEASE">
+			<Original>[HOSTAGE] Release</Original>
+			<French>[OTAGE] Relâcher</French>
+		</Key>
+		<Key ID="DOK_HACK_ACTION">
+			<Original>[PC] Hack</Original>
+			<French>[PC] Hacker</French>
+		</Key>
+		<Key ID="DOK_CARJACKING_ACTION">
+			<Original>[CAR] Pick lock</Original>
+			<French>[VOITURE] Crocheter</French>
+		</Key>
+	</Package>
+</Project>

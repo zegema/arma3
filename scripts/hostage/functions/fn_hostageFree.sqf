@@ -1,10 +1,9 @@
 /*
 	Author(s) : ElDoktor
 */
-private ["_hostage"];
-_hostage = _this;
+params ["_hostage","_player","_id"];
 
-_hostage setVariable ["DOK_HOSTAGE_ON",true];
+_hostage setVariable ["DOK_HOSTAGE_ON",true,true];
 [_hostage,""] call DOK_fnc_MPswitchMove;
 [_hostage] joinSilent (group player);
 _hostage setBehaviour "Careless";
@@ -18,7 +17,7 @@ _hostage setVariable ["DOK_HOSTAGE_STATE",0];
 		["DOKCAPTUREON","onEachFrame"] call BIS_fnc_removeStackedEventHandler;
 		if(!alive _hostage) then {
 			hint "L'otage est mort ...";
-			_hostage setVariable ["DOK_HOSTAGE_ON",false];
+			_hostage setVariable ["DOK_HOSTAGE_ON",false,true];
 			_hostage setVariable ["DOK_HOSTAGE_STATE",0];
 			[_hostage] joinSilent grpNull;
 			_hostage spawn {

@@ -4,6 +4,7 @@
 	DOK_CREATE_FCT(effects,flash)
 	DOK_CREATE_FCT(effects,heavyColor)
 	DOK_CREATE_FCT(effects,highContrast)
+	DOK_CREATE_FCT(effects,lightSource)
 	DOK_CREATE_FCT(effects,infraRed)
 	DOK_CREATE_FCT(effects,noEffect)
 	DOK_CREATE_FCT(effects,sepia)

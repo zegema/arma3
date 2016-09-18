@@ -1,15 +1,14 @@
 /*
 	Author(s) : ElDoktor
 */
-private ["_hostage"];
-_hostage = _this;
+params ["_hostage","_player","_id"];
 
 if(vehicle _hostage != _hostage) then {
-	_hostage setVariable ["DOK_HOSTAGE_ON",false];
+	_hostage setVariable ["DOK_HOSTAGE_ON",false,true];
 	_hostage setVariable ["DOK_HOSTAGE_STATE",0];
 	[_hostage] joinSilent grpNull;
 }else{
-	_hostage setVariable ["DOK_HOSTAGE_ON",false];
+	_hostage setVariable ["DOK_HOSTAGE_ON",false,true];
 	_hostage setVariable ["DOK_HOSTAGE_STATE",0];
 	[_hostage] joinSilent grpNull;
 	_hostage forceWalk false;

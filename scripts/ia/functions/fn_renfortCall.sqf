@@ -18,18 +18,19 @@ while{count DOK_RENFORT_LIST > 0} do {
 };
 
 if(!isNull _renfort) then {
-	if!(simulationEnabled _renfort) then {
+	if!(simulationEnabled (leader _renfort)) then {
 		_renfort call DOK_fnc_groupEnable;
 	};
 
 	if(_renfort getVariable ["DOK_RENFORT_PARA",false]) then {
 		private ["_posPara"];
-		_posPara = _unitCalling getDir [500,(getDir _unitCalling)+180];
-		_posPara set [2,300];
+		_posPara = _unitCalling getPos [500,(getDir _unitCalling)+180];
+		_posPara set [2,200];
 		{
 			_x addBackpack "B_parachute";
 			_x setPos _posPara;
 			_x action ["OpenParachute",_x];
+			sleep 0.1;
 		}forEach (units _renfort);
 	};
 

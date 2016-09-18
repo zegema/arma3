@@ -1,6 +1,8 @@
 /*
 	Authors(s) : http://www.assaultmissionstudio.de/index.php?topic=338.0
 */
+if(!hasInterface)exitWith{};
+
 params [["_time",1]];
 
 "colorCorrections" ppEffectEnable true; 

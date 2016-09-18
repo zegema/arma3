@@ -7,6 +7,7 @@
 	4 : heavy
 	5 : heavy high
 */
+if(!hasInterface)exitWith{};
 
 params ["_object","_snowType"];
 private ["_snow"];
